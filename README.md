@@ -357,3 +357,56 @@ O ciclo de Terraform e as execuções do Ansible descritos neste roteiro foram e
 O roteiro Docker/Nginx e a configuração do Codespaces foram revisados com documentação oficial e verificação de sintaxe. **Eles não foram executados de ponta a ponta neste ambiente de preparação.** O professor deve preparar o Codespace e conferir a disponibilidade do servidor Docker antes da aula.
 
 As tags de imagem e as versões principais das features podem receber atualizações. Este kit fixa Terraform, o provider local e Ansible Core, mas não representa uma fixação integral de todas as dependências do ambiente.
+
+## 7. Registro das atividades realizadas pela dupla
+
+### 7.1. Testes com Docker — Integrante 1
+
+Durante a atividade, utilizamos o Docker Compose para executar uma página HTML por meio do servidor Nginx.
+
+Inicialmente, conseguimos acessar a aplicação pela porta 8080 do Codespaces e visualizar a página funcionando.
+
+Depois, provocamos uma falha alterando o mapeamento da porta de `8080:80` para `8080:81` no arquivo `compose.yaml`. Com isso, a página deixou de responder corretamente e apresentou o erro HTTP 502 no navegador.
+
+Para resolver o problema, restauramos a configuração original `8080:80` e executamos novamente o Docker Compose. Após a correção, a aplicação voltou a funcionar.
+
+**Evidências:**
+- `evidencias/docker/docker-pagina-funcionando.jpeg`
+- `evidencias/docker/docker-erro-502.jpeg`
+
+**Conclusão:** O teste mostrou que não basta o contêiner estar em execução. O mapeamento das portas também precisa estar correto para que a aplicação seja acessível.
+
+### 7.2. Testes com Ansible — Integrante 1
+
+Utilizamos o Ansible para configurar automaticamente um arquivo do ambiente por meio do playbook `ansible/ambiente.yml`.
+
+Na primeira execução, o Ansible criou o arquivo com a configuração desejada, apresentando `changed=1` e `failed=0`.
+
+Na segunda execução, sem alterações na configuração, o resultado foi `changed=0` e `failed=0`. Isso demonstrou a idempotência, pois o Ansible identificou que o arquivo já estava no estado desejado.
+
+Também provocamos uma falha ao modificar o caminho de destino para uma pasta inexistente. A execução apresentou `failed=1`, indicando que o diretório não existia.
+
+Após restaurar o caminho correto no playbook, executamos novamente o Ansible e obtivemos `failed=0`, confirmando a recuperação do ambiente.
+
+**Evidências:**
+- `evidencias/ansible/ansible-mudanca-e-repeticao.png`
+- `evidencias/ansible/ansible-falha.png`
+- `evidencias/ansible/ansible-recuperacao.png`
+
+**Conclusão:** O Ansible permitiu automatizar a configuração e verificar se ela já estava correta. Também foi possível identificar e corrigir uma falha sem precisar reconstruir todo o ambiente.
+
+### 7.3. Proposta de melhoria — Integrante 1
+
+Foi criada a branch `proposta-integrante-1` para propor uma melhoria na página Docker.
+
+A alteração adicionou a identificação do ambiente de homologação e seu status à página HTML.
+
+A proposta foi enviada ao GitHub por meio do Pull Request #1, que ficará aguardando a revisão do Integrante 2 antes de ser incorporado à branch principal.
+
+### 7.4. Testes com Terraform — Integrante 2
+
+*Esta seção será preenchida pelo Integrante 2 após a realização dos testes.*
+
+### 7.5. Revisão cruzada e conclusão
+
+*Esta seção será preenchida após a revisão dos Pull Requests pelos dois integrantes.*
