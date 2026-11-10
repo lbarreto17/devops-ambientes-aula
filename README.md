@@ -405,8 +405,24 @@ A proposta foi enviada ao GitHub por meio do Pull Request #1, que ficará aguard
 
 ### 7.4. Testes com Terraform — Integrante 2
 
-*Esta seção será preenchida pelo Integrante 2 após a realização dos testes.*
+Utilizamos o Terraform para gerenciar um arquivo local por meio da configuração declarada em terraform/main.tf.
+
+Inicialmente, executamos os comandos de inicialização e validação. Em seguida, realizamos um planejamento que identificou a necessidade de criar um recurso.
+
+Após aplicar o plano, o arquivo ambiente.txt foi criado com a configuração inicial AMBIENTE=homologacao.
+
+Na execução seguinte do planejamento, o Terraform não identificou mudanças necessárias, demonstrando que o recurso correspondia à configuração declarada.
+
+Depois, alteramos o conteúdo para incluir VERSAO=2. O Terraform identificou a necessidade de substituir o recurso, e a mudança foi aplicada com sucesso.
+
+Por fim, executamos o comando de destruição para remover o recurso criado e confirmamos que o arquivo deixou de existir.
+
+Evidências:
+- evidencias/terraform/terraform-criacao.png
+- evidencias/terraform/terraform-sem-mudancas.png
+- evidencias/terraform/terraform-versao-2.png
+- evidencias/terraform/terraform-remocao.png
 
 ### 7.5. Revisão cruzada e conclusão
 
-*Esta seção será preenchida após a revisão dos Pull Requests pelos dois integrantes.*
+O Terraform permitiu planejar, criar, atualizar e remover um recurso de maneira controlada, demonstrando o funcionamento da infraestrutura como código.
