@@ -35,15 +35,15 @@
 
 **Problema identificado:** Apenas uma pessoa da equipe conhece os procedimentos necessários para configurar e manter o ambiente.
 
-Consequência: Caso essa pessoa esteja ausente, a equipe pode enfrentar dificuldades para realizar correções, atualizar configurações ou recuperar o funcionamento da aplicação.
+**Consequência:** Caso essa pessoa esteja ausente, a equipe pode enfrentar dificuldades para realizar correções, atualizar configurações ou recuperar o funcionamento da aplicação.
 
-Camada afetada: Processos, documentação e operação.
+**Camada afetada:** Processos, documentação e operação.
 
-Classificação da intervenção: Automação e padronização.
+**Classificação da intervenção:** Automação e padronização.
 
-Estado desejado: Os procedimentos devem estar documentados e versionados, permitindo que diferentes integrantes consigam configurar e administrar o ambiente.
+**Estado desejado:** Os procedimentos devem estar documentados e versionados, permitindo que diferentes integrantes consigam configurar e administrar o ambiente.
 
-Como comprovar a correção: Solicitar que outro integrante execute os procedimentos utilizando apenas o repositório e sua documentação, verificando se consegue reproduzir o ambiente corretamente.
+**Como comprovar a correção:** Solicitar que outro integrante execute os procedimentos utilizando apenas o repositório e sua documentação, verificando se consegue reproduzir o ambiente corretamente.
 
 ## Conclusão
 
