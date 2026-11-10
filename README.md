@@ -429,8 +429,6 @@ Por fim, executamos o comando de destruição para remover o recurso criado e co
 
 ### 7.5. Revisão cruzada e conclusão
 
-### 7.5. Revisão cruzada e conclusão
-
 Durante a atividade, dividimos as responsabilidades pelos testes e pela documentação do projeto.
 
 O Integrante 1 ficou responsável pelos testes com Docker e Ansible e criou o Pull Request #1, propondo uma melhoria na identificação do ambiente Docker. A alteração foi revisada e aprovada pelo Integrante 2 antes de ser incorporada à branch principal.
