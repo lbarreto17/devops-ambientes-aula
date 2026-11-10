@@ -31,9 +31,9 @@
 
 **Como comprovar a correção:** Recriar o ambiente utilizando a configuração do projeto e verificar se a aplicação continua acessível pela porta esperada.
 
-## Problema 3 — 
-Dependência de uma única pessoa
-Problema identificado: Apenas uma pessoa da equipe conhece os procedimentos necessários para configurar e manter o ambiente.
+## Problema 3 — Dependência de uma única pessoa
+
+**Problema identificado:** Apenas uma pessoa da equipe conhece os procedimentos necessários para configurar e manter o ambiente.
 
 Consequência: Caso essa pessoa esteja ausente, a equipe pode enfrentar dificuldades para realizar correções, atualizar configurações ou recuperar o funcionamento da aplicação.
 
@@ -45,9 +45,8 @@ Estado desejado: Os procedimentos devem estar documentados e versionados, permit
 
 Como comprovar a correção: Solicitar que outro integrante execute os procedimentos utilizando apenas o repositório e sua documentação, verificando se consegue reproduzir o ambiente corretamente.
 
-## Conclusão — 
+## Conclusão
 
-Conclusão
 A análise dos três problemas mostrou a importância da padronização e da automação na administração de ambientes de TI.
 
 O Docker permite definir como a aplicação será executada e quais portas serão utilizadas. O Terraform possibilita declarar e controlar recursos por meio de código, enquanto o Ansible ajuda a manter configurações no estado desejado.
