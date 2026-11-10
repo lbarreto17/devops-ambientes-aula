@@ -392,6 +392,8 @@ Após restaurar o caminho correto no playbook, executamos novamente o Ansible e 
 - `evidencias/ansible/ansible-mudanca-e-repeticao.png`
 - `evidencias/ansible/ansible-falha.png`
 - `evidencias/ansible/ansible-recuperacao.png`
+- `evidencias/ansible/ansible-versao-2-aplicada.png`
+- `evidencias/ansible/ansible-versao-2-repeticao.png`
 
 **Conclusão:** O Ansible permitiu automatizar a configuração e verificar se ela já estava correta. Também foi possível identificar e corrigir uma falha sem precisar reconstruir todo o ambiente.
 
@@ -401,7 +403,7 @@ Foi criada a branch `proposta-integrante-1` para propor uma melhoria na página 
 
 A alteração adicionou a identificação do ambiente de homologação e seu status à página HTML.
 
-A proposta foi enviada ao GitHub por meio do Pull Request #1, que ficará aguardando a revisão do Integrante 2 antes de ser incorporado à branch principal.
+A proposta foi enviada ao GitHub por meio do Pull Request #1, revisada e aprovada pelo Integrante 2 e posteriormente incorporada à branch `main`.
 
 ### 7.4. Testes com Terraform — Integrante 2
 
@@ -417,12 +419,22 @@ Depois, alteramos o conteúdo para incluir VERSAO=2. O Terraform identificou a n
 
 Por fim, executamos o comando de destruição para remover o recurso criado e confirmamos que o arquivo deixou de existir.
 
-Evidências:
-- evidencias/terraform/terraform-criacao.png
-- evidencias/terraform/terraform-sem-mudancas.png
-- evidencias/terraform/terraform-versao-2.png
-- evidencias/terraform/terraform-remocao.png
+**Evidências:**
+- `evidencias/terraform/terraform-criacao.png.jpeg`
+- `evidencias/terraform/terraform-sem-mudancas.png.jpeg`
+- `evidencias/terraform/terraform-versao2.png.jpeg`
+- `evidencias/terraform/terraform-remocao.png.jpeg`
+
+**Conclusão:** O Terraform permitiu planejar, criar, atualizar e remover um recurso de maneira controlada, demonstrando o funcionamento da infraestrutura como código.
 
 ### 7.5. Revisão cruzada e conclusão
 
-O Terraform permitiu planejar, criar, atualizar e remover um recurso de maneira controlada, demonstrando o funcionamento da infraestrutura como código.
+### 7.5. Revisão cruzada e conclusão
+
+Durante a atividade, dividimos as responsabilidades pelos testes e pela documentação do projeto.
+
+O Integrante 1 ficou responsável pelos testes com Docker e Ansible e criou o Pull Request #1, propondo uma melhoria na identificação do ambiente Docker. A alteração foi revisada e aprovada pelo Integrante 2 antes de ser incorporada à branch principal.
+
+O Integrante 2 realizou os testes com Terraform e criou o Pull Request #2, propondo a inclusão de uma identificação do responsável pelo ambiente. A proposta foi revisada e aprovada pelo Integrante 1 antes de ser incorporada à branch principal.
+
+A realização dos testes e das revisões mostrou a importância de trabalhar com configurações versionadas, automação e colaboração. Com Docker, Ansible e Terraform, conseguimos compreender melhor como preparar ambientes, identificar alterações e corrigir problemas de forma organizada.
