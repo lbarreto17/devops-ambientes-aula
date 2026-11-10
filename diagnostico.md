@@ -33,8 +33,27 @@
 
 ## Problema 3 — Dependência de uma única pessoa
 
-*A ser desenvolvido pelo Integrante 2.*
+Problema identificado: Apenas uma pessoa da equipe conhece os procedimentos necessários para configurar e manter o ambiente.
+
+Consequência: Caso essa pessoa esteja ausente, a equipe pode enfrentar dificuldades para realizar correções, atualizar configurações ou recuperar o funcionamento da aplicação.
+
+Camada afetada: Processos, documentação e operação.
+
+Classificação da intervenção: Automação e padronização.
+
+Estado desejado: Os procedimentos devem estar documentados e versionados, permitindo que diferentes integrantes consigam configurar e administrar o ambiente.
+
+Como comprovar a correção: Solicitar que outro integrante execute os procedimentos utilizando apenas o repositório e sua documentação, verificando se consegue reproduzir o ambiente corretamente.
 
 ## Conclusão
 
-*A ser finalizada pelos dois integrantes após a análise dos três problemas.*
+Conclusão
+Substitua o texto pendente por:
+Conclusão
+A análise dos três problemas mostrou a importância da padronização e da automação na administração de ambientes de TI.
+
+O Docker permite definir como a aplicação será executada e quais portas serão utilizadas. O Terraform possibilita declarar e controlar recursos por meio de código, enquanto o Ansible ajuda a manter configurações no estado desejado.
+
+Além disso, o uso do GitHub, da documentação e das revisões em dupla reduz a dependência de uma única pessoa e facilita a identificação de alterações.
+
+Com essas práticas, os ambientes se tornam mais organizados, reproduzíveis e fáceis de manter.
